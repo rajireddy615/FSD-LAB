@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login page</title>
     <style>
         fieldset{
             width:500px;
-            background-image:url(n1.jpg);
+            background-image:url(nature.jpg);
             background-repeat:no-repeat;
             background-size:cover;
         }
@@ -15,15 +15,13 @@
             padding-top:6px;
             padding-bottom:6px;
         }
-        body{
-            color:white;
-        }
+        
     </style>
 </head>
 <script>
     function validate(){
         
-        let p1=frm.pwd.value;
+        let p1=document.frm.pwd.value;
         let p2=p1.length;
         if(p2<8)
         {
@@ -33,7 +31,7 @@
         return true;
     }
 </script>
-<body style="background-image:url(nature.jpg);background-repeat:no-repeat;background-size:cover">
+<body style="background-image:url(n1.jpg);background-repeat:no-repeat;background-size:cover">
     <center>
         <h2>Login</h2>
 <form name="frm" method="post" action="abc.html" onSubmit="return validate()">
